@@ -14,10 +14,11 @@ namespace lucas_apis_web_services_fuel_manager.Models
         [Required]
         public string Modelo { get; set; }
         [Required]
+        public string Placa { get; set; }
+        [Required]
         public int AnoFabricacao { get; set; }
         [Required]
         public int AnoModelo { get; set; }
-
-        public ICollection<Consumo> Consumos { get; set; }
+        public ICollection<Consumo>? Consumos { get; set; }
     }
 }

@@ -12,7 +12,7 @@ using lucas_apis_web_services_fuel_manager.Models;
 namespace lucas_apis_web_services_fuel_manager.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250912235239_M00")]
+    [Migration("20250913182721_M00")]
     partial class M00
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,6 +74,10 @@ namespace lucas_apis_web_services_fuel_manager.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Modelo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Placa")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

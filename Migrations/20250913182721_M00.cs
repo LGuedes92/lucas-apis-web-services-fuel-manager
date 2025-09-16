@@ -17,6 +17,7 @@ namespace lucas_apis_web_services_fuel_manager.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Marca = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Modelo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Placa = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AnoFabricacao = table.Column<int>(type: "int", nullable: false),
                     AnoModelo = table.Column<int>(type: "int", nullable: false)
                 },
