@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace lucas_apis_web_services_fuel_manager.Models
 {
     [Table ("Consumos")]
-    public class Consumo
+    public class Consumo : LinksHATEOS
     {
         [Key]
         public int Id { get; set; }
@@ -21,7 +21,7 @@ namespace lucas_apis_web_services_fuel_manager.Models
         public TipoCombustivel Tipo { get; set; }
         [Required]
         public int VeiculoId { get; set; }
-        public Veiculo Veiculo { get; set; }
+        public Veiculo ? Veiculo { get; set; }
     }
 
     public enum TipoCombustivel
